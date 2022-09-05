@@ -1,4 +1,4 @@
-- var pageTitle  = 'Dubai';
+-var pageTitle  = 'Dubai'
 
 doctype html 
 html(lang="en")
@@ -6,10 +6,39 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title= pageTitle;
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Space+Grotesk:wght@700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet")
+        title= pageTitle
+        style
+            include ../sass/style.css
+             
     body
         header 
-            .header
-                .header__logo-nav
-                    .logo
-                    ul.nav
+            .header.content 
+                .header__logo-nav.content
+                    .logo 
+                        img(src="../imgs/main/Logo.svg", alt="logo")
+                    ul.nav__item.content  
+                        -var list = ['Buy', 'Blog', 'About', 'Contact']
+                        each item in list
+                            li.item-list= item 
+                .header__button-lang-contact.content 
+                    .header__button.btn 
+                        a(href="") Book a consultation 
+                    .header__lang-contact.content 
+                        ul.lang__item.content 
+                            -var list = ['EN', 'RU'];
+                            each  item in list 
+                                li.item-list= item 
+                        p.contact +7 (212) 674-25-10
+        main 
+            .main
+                .main__text
+                    .main__text__box   
+                        p.sb-title Lorem ipsum
+                        h1.title
+                            |   Welcome home <br> 
+                            |   to luxury
+                        a.btn-more(href="") Book a consultation                   
+                        

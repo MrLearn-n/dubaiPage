@@ -1,7 +1,138 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$body-bg_color: #272727;
+$body-color: #fff;
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  src: url('../fonts/Gilroy/Gilroy-Regular.ttf') format('ttf');
+  src: url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  src: url('../fonts/Gilroy/Gilroy-Semibold.ttf') format('ttf');
+  src: url('../fonts/Gilroy/Gilroy-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('ttf');
+  src: url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff');
+}
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+  background-color: $body-bg_color;
+  color: $body-color;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.item-list {
+  list-style-type: none;
+}
+
+.btn > a {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #000;
+}
+
+%page-container {
+  max-width: 1802px;
+  margin: 0 auto;
+  justify-content: space-between;
+} 
+
+.header {
+  @extend %page-container;
+  &__logo-nav {
+    width: 35%;
+    ul {
+      li {
+        margin-left: 48px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &__button-lang-contact{
+    width: 28.3%;
+      ul {
+        li {
+          margin-left: 8px;
+          color: #929292;
+        }
+      }
+  }
+
+  &__button {
+    padding: 12px 14px;
+    background-color: #FCD54C;  
+  }
+
+  &__lang-contact {
+    width: 226px;
+  }
+
+  .item-list {
+    text-transform: uppercase;
+    font-family: "Gilroy";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    cursor: pointer;
+  }
+  .item-list:first-child {
+    margin-left: 0px;
+  }
+}
+
+
+
+.main {
+  @extend %page-container;
+  background-image: url('../imgs/main/banner-slide1.png');
+  background-position: center center;
+  background-size: cover;
+  &__text {
+    padding: 278px 704px 310px 356px;
+      &__box {
+          p {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          text-transform: uppercase;
+          margin: 0px;
+        }
+  
+        h1 {
+          font-family: 'Space Grotesk', sans-serif;
+          font-weight: 700;
+          font-size: 96px;
+          line-height: 100px;
+          text-transform: capitalize;
+          margin: 22px 0px;
+        }
+  
+        .btn-more {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 23px;
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+  }
 }

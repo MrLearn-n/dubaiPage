@@ -3,36 +3,16 @@ const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
 
 
-const src  = 'src/',
-    dist = 'dist',
-    app = {
-        src: {
-            html: src + 'pug/index.pug',
-            css: src + 'sass/*.scss',
-            imgs: src + 'imgs',
-            fonts: src + 'fonts',  
-        },
-        
-        
-        dist: {
-            html: dist + '/html',
-            css: dist + '/css',
-            imgs: dist + '/imgs',
-            fonts: dist + '/fonts',  
-        }
-
-    }
-
 
 gulp.task('taskPug', function() {
-    return gulp.src(app.src.html)
+    return gulp.src('src/pug/index.pug')
         .pipe(pug())
-        .pipe(gulp.dest(app.dist.html));
+        .pipe(gulp.src('src/pug/index.html'));
 })
 
 gulp.task('taskScss', function() {
-    return gulp.src(app.src.css)
+    return gulp.src('src/sass/media.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(app.dist.css));
+        .pipe(gulp.dest('style/*.css'));
 })
     
