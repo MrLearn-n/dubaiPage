@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+  src: url("../fonts/Gilroy/Gilroy-Regular.ttf") format("ttf");
+  src: url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 600;
+  src: url("../fonts/Gilroy/Gilroy-Semibold.ttf") format("ttf");
+  src: url("../fonts/Gilroy/Gilroy-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 700;
+  src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("ttf");
+  src: url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff");
+}
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #272727;
+  color: #fff;
+  font-size: 14px;
+}
+
+.flex-content {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.item-list {
+  list-style-type: none;
+  margin: 0px 5px;
+}
+
+h2 {
+  font-size: 4.375rem;
+  line-height: 69px;
+  color: #e8e8e8;
+}
+
+.title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sb-title {
+  font-family: "Work Sans", sans-serif;
+  display: inline-block;
+}
+
+.txt {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 160%;
+}
+
+.btn {
+  padding: 12px 14px;
+  background-color: #fcd54c;
+}
+
+.btn > a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  max-width: 1802px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+  src: url("../fonts/Gilroy/Gilroy-Regular.ttf") format("ttf");
+  src: url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 600;
+  src: url("../fonts/Gilroy/Gilroy-Semibold.ttf") format("ttf");
+  src: url("../fonts/Gilroy/Gilroy-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 700;
+  src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("ttf");
+  src: url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff");
+}
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #272727;
+  color: #fff;
+  font-size: 14px;
+}
+
+.flex-content {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.item-list {
+  list-style-type: none;
+  margin: 0px 5px;
+}
+
+h2 {
+  font-size: 4.375rem;
+  line-height: 69px;
+  color: #e8e8e8;
+}
+
+.title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sb-title {
+  font-family: "Work Sans", sans-serif;
+  display: inline-block;
+}
+
+.txt {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 160%;
+}
+
+.btn {
+  padding: 12px 14px;
+  background-color: #fcd54c;
+}
+
+.btn > a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  max-width: 1802px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 20px 0px 26px 0px;
+}
+.header__logo-nav {
+  width: 35%;
+}
+.header__logo-nav nav {
+  position: relative;
+}
+.header__logo-nav nav ul li {
+  margin-left: 48px;
+  color: #ffffff;
+  user-select: none;
+}
+.header__logo-nav nav ul li:hover {
+  color: #fcd54c;
+}
+.header__logo-nav nav ul li:first-child::after {
+  content: url("./../imgs//main/nav-arrow.svg");
+  width: 6.83px;
+  height: 6.83px;
+  display: inline-block;
+  transform: rotate(270deg);
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+.header__logo-nav nav ul li.active:first-child::after {
+  transform: rotate(360deg);
+  top: 0px;
+}
+.header__logo-nav nav > .modal-window.active {
+  display: block;
+}
+.header__logo-nav nav > .modal-window {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 35px;
+  max-width: 247px;
+  width: 100%;
+  z-index: 1;
+  background: #272727;
+  border: 1px solid #979797;
+}
+.header__logo-nav nav > .modal-window ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+.header__logo-nav nav > .modal-window ul li {
+  z-index: 2;
+  margin-left: 0px;
+  padding: 9px 0px 10px 20px;
+  background-color: #272727;
+  text-transform: capitalize;
+  margin-right: 0px;
+}
+.header__logo-nav nav > .modal-window ul li:hover {
+  color: #272727;
+  background-color: #fcd54c;
+}
+.header__button-lang-contact {
+  width: 28.3%;
+}
+.header__button-lang-contact ul li {
+  margin-left: 8px;
+  color: #929292;
+}
+.header__button-lang-contact ul > .item-list:first-child {
+  margin-left: 0px;
+}
+.header__button {
+  margin-right: 10px;
+}
+.header__lang-contact {
+  width: 226px;
+}
+.header .item-list {
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: 600;
+  line-height: 17px;
+  cursor: pointer;
+}
+.header .item-list:first-child {
+  margin-left: 0px;
+}
