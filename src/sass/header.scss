@@ -1,0 +1,103 @@
+@import 'root';
+
+.header {
+  @extend %page-container;
+  padding: 20px 0px 26px 0px;
+  &__logo-nav {
+    width: 35%;
+    nav {
+      position: relative;
+      ul {
+        li {
+          margin-left: 48px;
+          color: #ffffff;
+          user-select: none;
+          &:hover {
+            color: $hoverColor;
+          }
+
+          &:first-child::after {
+            content: url("./../imgs//main/nav-arrow.svg");
+            width: 6.83px;
+            height: 6.83px;
+            display: inline-block;
+            transform: rotate(270deg);
+            position: relative;
+            left: 10px;
+            top: 5px;
+          }
+
+          &.active:first-child::after {
+            transform: rotate(360deg);
+            top: 0px;
+          }
+        }
+      }
+
+      > .modal-window.active {
+        display: block;
+      }
+
+      > .modal-window {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 35px;
+        max-width: 247px;
+        width: 100%;
+        z-index: 1;
+        background: #272727;
+        border: 1px solid #979797;
+        ul {
+          margin: 0px;
+          padding-left: 0px;
+          li {
+            z-index: 2;
+            margin-left: 0px;
+            padding: 9px 0px 10px 20px;
+            background-color: $body-bg_color;
+            text-transform: capitalize;
+            margin-right: 0px;
+            &:hover {
+              color: $body-bg_color;
+              background-color: $hoverColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__button-lang-contact {
+    width: 28.3%;
+    ul {
+      li {
+        margin-left: 8px;
+        color: #929292;
+      }
+
+      > .item-list:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  &__button {
+    margin-right: 10px;
+  }
+
+  &__lang-contact {
+    width: 226px;
+  }
+
+  .item-list {
+    text-transform: uppercase;
+    font-family: "Gilroy";
+    font-weight: 600;
+    line-height: 17px;
+    cursor: pointer;
+  }
+  .item-list:first-child {
+    margin-left: 0px;
+  }
+}

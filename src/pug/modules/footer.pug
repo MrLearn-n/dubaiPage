@@ -1,0 +1,45 @@
+footer
+            .footer
+                .footer__logo 
+                    img(src=img + "Logo.svg")
+                .footer__text-column.flex-content 
+                    .text-row
+                        ul.text-row__item
+                            -var list = ['Buy', 'Apartment in Dubai', 'House in Dubai', 'Apartments in Dubai', 'Loft in Dubai', 'Penthouse in Dubai', 'Villa in Dubai'];
+                            each item in list
+                                li.item-list.txt= item
+                    .text-row
+                        ul.text-row__item
+                            -var list = ['Services', 'Property management in Dubai, UAE', 'Sell ​​property in Dubai, UAE', 'Rent property in Dubai, UAE', 'Investments in Dubai, UAE', 'Real estate for cryptocurrency in Dubai', 'Moving to Dubai, UAE'];
+                            each item in list
+                                li.item-list.txt= item
+                    .text-row
+                        ul.text-row__item
+                            -var list = ['Information', 'Video', 'Podcasts', 'Laws', 'Questions and answers', 'Books', 'Articles'];
+                            each item in list
+                                li.item-list.txt= item
+                    .text-row
+                        ul.text-row__item
+                            -var list = ['About company', 'Jobs ', 'Story', 'Licenses', 'Why are we', 'Real estate agency'];
+                            each item in list
+                                li.item-list.txt= item
+                    .text-row
+                        ul.text-row__item
+                            -var list = ['Contact', '964 Worthington Drive Dubai, UAE', 'dubairealty@mail.com'];
+                            each item in list
+                                li.item-list.txt= item
+                        .footer__button.btn 
+                            a(href="") Book a consultation 
+            .footer-bot.flex-content 
+                p.txt Copyright © 2022 Dubai Realty
+                ul.item.flex-content
+                    li.item-list
+                        img(src=img + 'facebook.svg' alt = "facebook")
+                    li.item-list
+                        img(src=img + 'twitter.svg' alt = "twitter")
+                    li.item-list
+                        img(src=img + 'youtube.svg' alt = "youtube")
+                    li.item-list
+                        img(src=img + 'instagram.svg' alt = "instagram")
+                    li.item-list
+                        img(src=img + 'linkedin.svg' alt = "linkedin")
