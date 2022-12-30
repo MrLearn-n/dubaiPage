@@ -1,0 +1,426 @@
+@import 'root';
+@import 'header';
+@import 'footer';
+
+.main {
+  @extend %page-container;
+  background-image: url('../imgs/main/banner-slide1.png');
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 971px;
+  &__text {
+    position: absolute;
+    top: 278px;
+    left: 356px;
+          &::after {
+            content: url('');
+            top: -44px;
+            left: -28px;
+            border: 4px solid #FCD54C;
+            border-right: none;
+            position: absolute;
+            display: block;
+            width: 124px;
+            height: 383px;
+          }
+          
+        p {
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 19px;
+          text-transform: uppercase;
+          margin: 0px;
+        }
+  
+        h1 {
+          font-family: 'Space Grotesk', sans-serif;
+          font-weight: 700;
+          font-size: 6rem;
+          line-height: 100px;
+          text-transform: capitalize;
+          margin: 22px 0px;
+        }
+  
+        .btn-more {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 700;
+          font-size: 1.25rem;
+          line-height: 23px;
+          text-decoration: none;
+          color: #fff;
+        }
+  }
+  &__example  {
+    width: 1080.29px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #272727;
+    box-sizing: border-box;
+    padding: 57.95px 33.15px 40.03px 60.41px;
+      &__row-num-text {
+        align-items: center;
+          > p:first-child {
+            color: $body-color;
+            font-family: $Gilroy;
+            font-weight: 700;
+            font-size: 3.75rem;
+            line-height: 24px;
+            cursor: pointer;
+            margin: 0px 27px 0px 0px;
+
+            &:hover {
+              color: $hoverColor;
+            }
+
+          }
+
+          > p:last-child {
+            font-family: "Work Sans", sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 26px;
+            margin: 0px;
+          }
+      }
+  }
+}
+
+.projects {
+  @extend %page-container;
+  &__text {
+    max-width: 1103px;
+    margin:  0 auto;
+    > .title {
+      font-size: 3rem;
+      line-height: 69px;
+    }
+
+    > .btns > ul {
+      width: 232px;
+      > li {
+        font-family: $WorkSans;
+        font-weight: 600;
+      font-size: 1rem;
+      line-height: 21px;
+      }
+    }
+  }
+  &__body {
+    > .project {
+      position: relative;
+      > img {
+        width: 100%;
+        height: 100%;
+      } 
+
+      > p {
+        font-family: $Gilroy;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 45px;
+        margin: 0px;
+        position: absolute;
+        left: 48px;
+        bottom: 85px;
+      }
+
+      >.hover-after.active {
+        display: block;
+      }
+
+      >.hover-after {
+        display: none;
+        position: absolute;
+        top: 0px;
+        background-color: $hoverColor;
+        color: $body-bg_color;
+        max-width: 339px;
+        width: 100%;
+        padding: 46px 61px 35px 30px;
+
+        >.title {
+          font-size: 32px;
+          line-height: 45px;
+        }
+
+        >.txt {
+          font-size: 1.375rem;
+          line-height: 26px;
+          margin: 130px 0px 144px 0px;
+        }
+
+        >.btn-hover {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 23px;
+          margin: 0px;
+          cursor: pointer;
+          display: inline-block;
+        }
+      }
+    }
+  } 
+}
+
+.aboutUs {
+  max-width: 730px;
+  margin:  0 auto;
+  padding: 70px 0px 89px 0px;
+  .sb-title {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 160%;
+    color: #FCD54C;
+  }
+
+  .txt {
+    font-size: 18px;
+    line-height: 160%;
+    color: #E8E8E8;
+    margin: 0px
+  }
+}
+
+.video {
+  @extend %page-container;
+}
+
+.quotes-gallery {
+  @extend %page-wrapper;
+  > .quotes {
+      align-items: flex-start;
+      
+      > .txt {
+        max-width: 919px;
+        font-family: $Gilroy;
+        font-size: 1.875rem;
+        line-height: 160%;
+        padding: 70px 94px 69px 97px;
+        margin: 118.82px 0px 64px 0px;
+        border: 1px solid #FCD54C;
+      } 
+  }
+  
+  > .gallery__column.flex-content {
+    margin-bottom: 115px;
+    > .gallery_row {
+      max-width: 543px;
+      width: 100%;
+  
+      > .txt {
+        font-size: 1.125rem;
+        color: #E8E8E8;
+        margin-top: 70px;
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+
+.subscribe {
+  @extend %page-container;
+  background-image: url('../imgs/section_subscribe-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__text {
+    max-width: 611px;
+    margin:  0 auto;
+    text-align: center;
+    color: #272727;
+    padding: 87px 0px 85px 0px;
+    
+    > .sb-title {
+      margin: 0px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 160%;
+    }
+    
+    > .title {
+      font-size: 120px;
+      line-height: 69px;  
+      margin: 15px 0px 54px 0px;
+    }
+
+    > form {
+      max-width: 472px;
+      margin:  0 auto;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      > input:first-child {
+        max-width: calc(220px * 100% / 472px);
+        width: 100%;
+        padding: 25px 22px 22px 42px;
+        border: none
+      }
+
+      > input:last-child {
+        max-width: calc(165px * 100% / 472px);
+        width: 100%;
+        background-color: #272727;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+}
+
+.news {
+  @extend %page-wrapper;
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .txt {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 21px;
+      color: #929292;
+    }
+  }
+
+  &__column {
+    .news_row {
+      position: relative;
+
+      .txt {
+        font-family: $Gilroy;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 35px;
+        position: absolute;
+        left: 50px;
+        margin: 0px;
+        bottom: 50px;
+      }
+    }
+  }
+}
+
+.comments {
+  @extend %page-wrapper;
+  height: 18vh;
+  position: relative;
+  // margin-top: 33px;
+  &__column {
+    position: relative;
+    >.comment_row:first-child {
+      left: -55%;
+      top: -23px;
+      opacity: 0.5;
+    }
+
+    >.comment_row {
+      position: absolute;
+      top: 30px;
+      border: 1px solid #FCD54C;
+      max-width: 525px;
+      width: 100%;
+      > .comment-text {
+        max-width: 450px;
+        padding: 104px 45px 27px 30px;
+        width: 100%;
+        > .title {
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 30px;
+          margin:  0px;
+        }
+
+        > .sb-title {
+          font-family: $WorkSans;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 19px;
+          margin: 19px 0px 34px 0px;
+        }
+
+        > txt {
+        font-family: $WorkSans;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 26px;
+        color: #929292;
+        margin: 0px;
+        }
+      }
+    }
+
+    >.comment_row:nth-child(3) {
+      right: 0px;
+    }
+
+    >.comment_row:last-child {
+      right: -55%;
+      top: -23px;
+      opacity: 0.5;
+    }
+  }
+
+  &__item {
+    display:flex;
+    justify-content: center;
+    margin: 0px;
+    position: absolute;
+    bottom: -30px;
+    left: 45%;
+    >.item-list {
+      margin-left: 17px;
+    }
+
+    >.item-list::after {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      background-color: #929292;
+      border-radius: 100px
+    }
+
+    .item-list:first-child {
+      margin-left: 0px;
+    }
+
+    .item-list:last-child {
+      margin-right: 0px;
+    }
+
+    >.item-list.active::after {
+      background-color: $hoverColor;
+    }
+  }
+}
+
+.questions {
+  @extend %page-wrapper;
+  padding-bottom: 122px;
+  > .title {
+      margin-bottom: 23px;
+    }
+
+  >.text-arrow-btn {
+    padding: 20px 0px;
+    margin: 0px;
+    border-top: 1px solid #929292;
+
+    >.txt {
+      margin:  0px;
+    }
+
+    >.text-after-click {
+      max-width: 980px;
+      margin:  0 auto;
+    }
+  }
+}
