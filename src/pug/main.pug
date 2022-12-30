@@ -1,0 +1,195 @@
+- var pageTitle  = 'Dubai - Main';
+- var img = "../imgs/main/";
+doctype html 
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Space+Grotesk:wght@700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet")
+        link(rel="stylesheet" type="text/css" href="./../css/main.css")
+        title= pageTitle
+        //- style
+        //-     include ../sass/style.css
+    body
+        include ./modules/header.pug
+        main 
+            .main
+                .main__text
+                        p.sb-title Lorem ipsum
+                        h1.title
+                            |   Welcome home <br> 
+                            |   to luxury
+                        a.btn-more(href="") Book a consultation   
+                .main__example.flex-content
+                        .main__example__row-num-text.flex-content 
+                            p.example__num 01
+                            p.example__text 
+                                |   Lorem Ipsum <br> 
+                                |   Dolorem apset 
+                        .main__example__row-num-text.flex-content 
+                            p.example__num 02
+                            p.example__text 
+                                |   Lorem Ipsum <br> 
+                                |   Dolorem apset 
+                        .main__example__row-num-text.flex-content 
+                            p.example__num 03
+                            p.example__text 
+                                |   Lorem Ipsum <br> 
+                                |   Dolorem apset 
+        section 
+            .projects 
+                .projects__text.flex-content
+                    h2.title Latest projects
+                    .btns
+                        ul.projects__item.flex-content
+                            -var list = ['All', 'Building', 'Interior'];
+                            each item in list
+                                li.item-list= item 
+                            
+                .projects__body.flex-content
+                    .project
+                        img(src=img + "project-1.png", alt="project")
+                        p.txt Villas
+                        .hover-after 
+                            .title Dubai
+                            .txt    Lorem ipsum dolor sit amet, <br> 
+                                    | consectetur adipiscing elit. <br> 
+                                    | Consequat molestie integer <br> 
+                                    | aliquam consectetur. Faucibus <br> 
+                                    | vitae dui massa tellus magna <br> 
+                                    | sit.
+                            .btn-hover.txt See project
+                    .project
+                        img(src=img + "project-3.png", alt="project")
+                        p.txt Villas
+                        .hover-after 
+                            .title Dubai
+                            .txt    Lorem ipsum dolor sit amet, <br> 
+                                    | consectetur adipiscing elit. <br> 
+                                    | Consequat molestie integer <br> 
+                                    | aliquam consectetur. Faucibus <br> 
+                                    | vitae dui massa tellus magna <br> 
+                                    | sit.
+                            .btn-hover.txt See project
+                    .project
+                        img(src=img + "project-2.png", alt="project")
+                        p.txt Houses
+                        .hover-after 
+                            .title Dubai
+                            .txt    Lorem ipsum dolor sit amet, <br> 
+                                    | consectetur adipiscing elit. <br> 
+                                    | Consequat molestie integer <br> 
+                                    | aliquam consectetur. Faucibus <br> 
+                                    | vitae dui massa tellus magna <br> 
+                                    | sit.
+                            .btn-hover.txt See project
+                    .project
+                        img(src=img + "project-1.png", alt="project")
+                        p.txt Villas
+                        .hover-after 
+                            .title Dubai
+                            .txt    Lorem ipsum dolor sit amet, <br> 
+                                    | consectetur adipiscing elit. <br> 
+                                    | Consequat molestie integer <br> 
+                                    | aliquam consectetur. Faucibus <br> 
+                                    | vitae dui massa tellus magna <br> 
+                                    | sit.
+                            .btn-hover.txt See project            
+        section
+            .aboutUs
+                p.sb-title Our expertise
+                h2.title 
+                    |   "The best apartment <br>
+                    |   in Dubai" we will find <br> 
+                    |   your dre am
+                p.txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh massa, euismod ut libero id, blandit posuere augue. Morbi porta volutpat diam egestas ultrices. Phasellus tempus fringilla neque, nec viverra orci tristique vel. In efficitur vehicula magna, varius pellentesque nisl vehicula vel. Aenean vel sem ac elit commodo finibus in nec massa. Nulla facilisi. Nulla vestibulum venenatis sollicitudin. Etiam auctor mollis justo eu tincidunt. Aliquam varius varius tortor. Cras id venenatis sem. Quisque ut risus ex. Sed et tempor massa. Praesent ac eros hendrerit, congue justo ac, molestie urna. Fusce nec neque vitae dolor dapibus elementum. Maecenas nec orci quis sem condimentum dapibus varius a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        section 
+            .video
+                img(src=img + "video-placeholder.png")
+        section 
+            .quotes-gallery 
+                .quotes
+                    p.txt “Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” — Mary Kay Ash
+                .gallery__column.flex-content
+                    .gallery_row 
+                        img(src=img + "gallery-placeholder-1.png")
+                        p.txt Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+                    .gallery_row
+                        img(src=img + "gallery-placeholder-2.png")
+                        p.txt Vivamus non diam vel lorem efficitur mattis in gravida ante. Ut ullamcorper dapibus ante, eu tincidunt orci feugiat vel. Curabitur eget lectus lectus. Pellentesque malesuada, felis at accumsan interdum, nisl mi fermentum est, eu suscipit dui lorem a dui. Aliquam rhoncus risus in leo vestibulum efficitur. Suspendisse tortor quam, faucibus a lacinia a, bibendum vitae quam. Suspen disse et metus et orci rutrum dictum eu eu nibh. Suspendisse blandit in diam in rhoncus. Nam volutpat hendrerit enim, sed aliquet quam gravida at. Nullam dictum sagittis nisi, eu porta sem mollis eu. Nulla faucibus sed ipsum sed sodales. Curabitur varius iaculis felis, in aliquet sem suscipit quis. Ut vulputate, magna ac bibendum elementum, nulla magna tincidunt urna, a venenatis dolor arcu sed leo.
+        include ./modules/subscribe.pug 
+        section
+            .news
+                .news__head 
+                    h2.title Useful articles
+                    p.txt View all articles
+                .news__column.flex-content
+                    .news_row
+                            img(src=img + "news-1.png", alt = "news-bg")
+                            p.txt Discover Architecture
+                    .news_row
+                            img(src=img + "news-3.png", alt = "news-bg")
+                            p.txt Discover Architecture   
+                    .news_row
+                            img(src=img + "news-1.png", alt = "news-bg")
+                            p.txt Discover Architecture
+            .comments 
+                    .comments__column.flex-content
+                        .comment_row
+                            .comment-text 
+                                h6.title Paul
+                                p.sb-title Owner in Paul.com
+                                p.txt   Projects for many large domestic and foreign <br> 
+                                        | corporations, enterprises in many elds such as nance, <br> 
+                                        | banking, F&B, education, communication.
+                        .comment_row
+                            .comment-text 
+                                h6.title Paul
+                                p.sb-title Owner in Paul.com
+                                p.txt   Projects for many large domestic and foreign <br> 
+                                        | corporations, enterprises in many elds such as nance, <br> 
+                                        | banking, F&B, education, communication.
+                        .comment_row
+                            .comment-text 
+                                h6.title Paul
+                                p.sb-title Owner in Paul.com
+                                p.txt   Projects for many large domestic and foreign <br> 
+                                        | corporations, enterprises in many elds such as nance, <br> 
+                                        | banking, F&B, education, communication.
+                        .comment_row
+                            .comment-text 
+                                h6.title Paul
+                                p.sb-title Owner in Paul.com
+                                p.txt   Projects for many large domestic and foreign <br> 
+                                        | corporations, enterprises in many elds such as nance, <br> 
+                                        | banking, F&B, education, communication.
+                    ul.comments__item.flex-content 
+                        li.item-list.change
+                        li.item-list.change
+                        li.item-list.change
+        section
+            .questions     
+                h2.title FAQ
+                .text-arrow-btn
+                    p.txt The largest and oldest Quotations Page on the Web with about 30 categories
+                    .text-after-click
+                        p.txt   Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. <br>
+                                |   Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus <br>
+                                |   dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat <br> 
+                                |   placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget <br> 
+                                |   auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque <br>
+                                |   elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+                .text-arrow-btn.txt 
+                    p.txt A huge collection of inspirational quotes, thoughts of greatest minds in history
+                .text-arrow-btn.txt 
+                    p.txt Quotations from the great works of literature
+                .text-arrow-btn.txt 
+                    p.txt Read quotes and sayings from famous people in history
+                .text-arrow-btn.txt 
+                    p.txt Collected quotes from Albert Einstein
+        include ./modules/footer.pug
+        script(src="./../scripts/script.js")
+        script(src="./../scripts/modals.js") 
