@@ -53,6 +53,7 @@ h2 {
 .sb-title {
   font-family: "Work Sans", sans-serif;
   display: inline-block;
+  margin: 0px;
 }
 
 .txt {
@@ -159,6 +160,7 @@ h2 {
 }
 .header__button {
   margin-right: 10px;
+  cursor: pointer;
 }
 .header__lang-contact {
   width: 226px;

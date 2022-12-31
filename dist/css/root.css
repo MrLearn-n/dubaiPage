@@ -53,6 +53,7 @@ h2 {
 .sb-title {
   font-family: "Work Sans", sans-serif;
   display: inline-block;
+  margin: 0px;
 }
 
 .txt {
