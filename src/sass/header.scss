@@ -1,5 +1,9 @@
 @import 'root';
 
+.header.top {
+  padding: 17px 0px 28px 0px
+}
+
 .header {
   @extend %page-container;
   padding: 20px 0px 26px 0px;
