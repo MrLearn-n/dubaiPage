@@ -28,7 +28,7 @@ gulp.task('taskImgs', function() {
 })
 
 gulp.task('watch', function() {
-    gulp.watch('./src/pug/*.pug', gulp.series(['taskPug']));
+    gulp.watch('./src/pug/**/**', gulp.series(['taskPug']));
     gulp.watch('./src/sass/*.scss', gulp.series(['taskScss']));
     gulp.watch('./src/fonts/**/**', gulp.series(['taskFonts']));
     gulp.watch('./src/imgs/**/**', gulp.series(['taskImgs']));
